@@ -100,17 +100,6 @@
                 },
                 {
                     "name": "",
-                    "id": "cd05195e-b0b4-4ede-ba5f-3bdb45662fec",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "49af7d21-2549-4c1e-b2bb-810699f2a8d6",
                     "path": "<Mouse>/delta",
                     "interactions": "",
@@ -128,6 +117,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Inventory",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "cd05195e-b0b4-4ede-ba5f-3bdb45662fec",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
