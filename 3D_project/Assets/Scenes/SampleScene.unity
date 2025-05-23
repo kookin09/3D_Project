@@ -1969,6 +1969,7 @@ GameObject:
   - component: {fileID: 933991640}
   - component: {fileID: 933991639}
   - component: {fileID: 933991638}
+  - component: {fileID: 933991641}
   m_Layer: 5
   m_Name: UIInventory
   m_TagString: Untagged
@@ -2060,6 +2061,29 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
+--- !u!114 &933991641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933991636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8459d7e9bd73f0449a5ec79283513544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slots: []
+  inventoryWindow: {fileID: 933991636}
+  slotPanel: {fileID: 1631548288}
+  selectedItemName: {fileID: 53863733}
+  selectedItemDescription: {fileID: 1738269781}
+  selectedStatName: {fileID: 761881984}
+  selectedStatValue: {fileID: 1788341264}
+  useButton: {fileID: 718150773}
+  equipButton: {fileID: 617783018}
+  unequipeButton: {fileID: 1191711493}
+  dropButton: {fileID: 211261671}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3118,7 +3142,19 @@ MonoBehaviour:
     m_ActionId: 079c4540-131a-4759-8ca1-8c765cfab42c
     m_ActionName: Player/Look[/Mouse/delta]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1499329826}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnInventory
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: d028d3a7-335c-4a0a-92bc-3f5285f46feb
     m_ActionName: Player/Inventory[/Keyboard/tab]
   - m_PersistentCalls:
@@ -3163,6 +3199,7 @@ MonoBehaviour:
   minXLook: -65
   maxXLook: 65
   lookSensitivity: 0.1
+  canLook: 1
 --- !u!114 &1499329827
 MonoBehaviour:
   m_ObjectHideFlags: 0
