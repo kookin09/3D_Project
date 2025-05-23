@@ -2,17 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemObject : MonoBehaviour
+public interface IInteractable
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public string GetInteractPrompt();
+    public void OnInteract();
+}
+public class ItemObject : MonoBehaviour, IInteractable
+{
+    public ItemDate date;
 
-    // Update is called once per frame
-    void Update()
+    public string GetInteractPrompt()
     {
-        
+        string str = $"{date.disPlayName}\n{date.description}";
+        return str;
+    }
+    public void OnInteract()
+    {
+        CharacterManager.Instance.Player.itemDate = date;
+        CharacterManager.Instance.Player.addItem?.Invoke();
+        Destroy(gameObject);
     }
 }
