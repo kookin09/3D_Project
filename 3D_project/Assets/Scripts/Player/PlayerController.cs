@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    //¾È³ç
     [Header("Movement")]
     public float moveSpeed;
     private Vector2 curMovementInput;
